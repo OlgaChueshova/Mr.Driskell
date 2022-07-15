@@ -1,0 +1,11 @@
+:root {
+    --txt-White: #FAF6F2;
+
+    --txt-Gray: #D0D0D0;
+    --txt-Gray-2: #636B78;
+    --txt-Dark: #3E424B;
+
+    --txt-Orange: #BB8C5F;
+
+    --title-aktive: var(--txt-Orange);
+ }
