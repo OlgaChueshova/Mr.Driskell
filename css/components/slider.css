@@ -1,0 +1,13 @@
+.slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    min-height: 700px;
+    background-color: var(--Blacks);
+}
+
+.slider__slide {
+    background-image: url('../../images/slider/Bg\ 2.jpg');
+    width: 100%;
+    min-height: 700px;
+}
