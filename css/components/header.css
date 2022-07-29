@@ -4,8 +4,6 @@
 
 .header__container {
     padding: 36px 352px 12px 352px;
-    background-color: var(--Black);
-
 }
 
 .header__wrapper-top {
@@ -174,7 +172,8 @@
 
 .header__catalog-menu {
     display: block;
-    visibility: collapse;
+    opacity: 0;
+    visibility: hidden;
     position: absolute;
     margin-top: 16px;
     padding-top: 1px;
@@ -183,6 +182,7 @@
 }
 
 .header__catalog-link:hover .header__catalog-menu {
+    opacity: 1;
     visibility: visible;
     width: 618px;
 }
@@ -249,7 +249,7 @@
 }
 
 .header__catalog-menu--brands:hover .header__catalog-menu {
-    max-width: 1185px;
+    width: 1185px;
 }
 
 .header__catalog-menu--brands:hover .header__catalog-sub-menu--brands {
@@ -269,6 +269,7 @@
 
 .header__catalog-sub-menu--categories {
     display: flex;
+    position: absolute;
     padding: 50px;
     max-width: 618px;
     width: 100%;
@@ -278,10 +279,13 @@
     background-image: url('../../images/dividers/dividers-cetegories-sub-menu.svg');
     background-position: center top;
     background-repeat: no-repeat;
+    opacity: 0;
+    visibility: collapse;
 }
 
 .header__catalog-sub-menu--brands {
     display: flex;
+    position: absolute;
     padding: 50px;
     max-width: 1185px;
     width: 100%;
@@ -291,6 +295,8 @@
     background-image: url('../../images/dividers/dividers-brands-sub-menu.svg');
     background-position: center top;
     background-repeat: no-repeat;
+    opacity: 0;
+    visibility: collapse;
 }
 
 .header__catalog-sub-menu--section:not(.header__catalog-sub-menu--section:nth-of-type(1)) {
