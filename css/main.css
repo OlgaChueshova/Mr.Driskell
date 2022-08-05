@@ -5,6 +5,9 @@
 @import url('./components/header.css');
 @import url('./components/slider.css');
 @import url('./components/slider-catalog.css');
+@import url('./components/categories.css');
+@import url('./components/product-card.css');
+@import url('./components/slider-product-card.css');
 
 * {
     box-sizing: border-box;
@@ -13,4 +16,9 @@
 body {
     font-family: 'Jost', sans-serif;
     font-weight: 400;
+}
+
+main {
+    background: #919191;
+    padding-top: 120px;
 }

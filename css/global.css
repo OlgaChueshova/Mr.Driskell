@@ -12,6 +12,8 @@
     
     --Black: #050402;
 
+    --White: var(--txt-White);
+
     --title-aktive: var(--txt-Orange);
  }
 

@@ -7,7 +7,6 @@
 
 .header__slide-titel {
     font-family: 'Forum';
-    font-style: normal;
     font-weight: 400;
     font-size: 75px;
     line-height: 100%;
@@ -17,26 +16,11 @@
 
 .header__slide-sub-titel {
     font-family: 'Jost';
-    font-style: normal;
     font-weight: 400;
     font-size: 25px;
     line-height: 140%;
     color: var(--txt-White);
     margin-top: 30px;
-}
-
-.header__slide-details-btn--link {
-    font-family: 'Jost';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 150%;
-    text-align: center;
-    color: var(--txt-White);
-    text-decoration: none;
-    margin: 18px 63px 62px 64px;
-    z-index: 100;
-    position: absolute;
 }
 
 .header__slide-details-btn {
@@ -50,3 +34,16 @@
     left: 0;
     top: 0;
  }
+ 
+.header__slide-details-btn--link {
+    font-family: 'Jost';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--txt-White);
+    text-decoration: none;
+    margin: 18px 63px 62px 64px;
+    z-index: 2;
+    position: absolute;
+}

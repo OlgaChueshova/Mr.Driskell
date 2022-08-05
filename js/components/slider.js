@@ -55,6 +55,8 @@ class Slider {
         })
     }
 
+
+
     next() {
         if (this.activeSlide < this.slides.length) {
             this.activeSlide = this.activeSlide + 1;
@@ -68,6 +70,7 @@ class Slider {
             this.container.style.transform = `translateX(-${this.width * this.activeSlide}px)`
         }
     }
+
 
 
 }

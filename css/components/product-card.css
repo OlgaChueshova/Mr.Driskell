@@ -1,0 +1,182 @@
+.product-card {
+    position: relative;
+    z-index: 0;
+    width: 289px;
+    min-height: 384px;
+    background-color: #F5F5F5;
+    padding-top: 15px;
+    margin-top: 20px;
+}
+
+.product-card__lable {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    z-index: 2;
+}
+
+.product-card__lable--new {
+    position: absolute;
+    z-index: 3;
+    top: 4px;
+    left: 10px;
+    font-family: 'Jost';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 130%;
+    color: var(--txt-Orange);
+
+}
+
+.product-card__like {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    z-index: 2;
+}
+
+.product-card__name {
+    display: block;
+    font-family: 'Jost';
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 140%;
+    color: var(--txt-Dark);
+    margin: 11px 30px 10px 30px;
+}
+
+.product-card__price {
+    font-family: 'Jost';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 130%;
+    color: var(--txt-Orange);
+    margin: 0 auto 30px 30px;
+}
+
+.product-card__price::after {
+    content: "\20BD";
+    margin-left: 3px;
+}
+
+.product-card__inbasket-btn {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    bottom: -70px;
+    z-index: 5;
+    width: 289px;
+    height: 100px;
+    background-color: #F5F5F5;
+    padding: 20px 15px 30px 15px;
+}
+
+.product-card__inbasket-btn>p {
+    position: absolute;
+    z-index: 2;
+    top: 28px;
+    left: 57px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--txt-Orange);
+}
+
+.product-card:hover {
+    box-shadow: 20px -18px 10px 5px rgba(9, 9, 9, 0.1);
+    transform: translateY(-25px);
+    transition: 0.5s;
+}
+
+.product-card:hover .product-card__inbasket-btn {
+    opacity: 1;
+    visibility: visible;
+    box-shadow: 20px 20px 10px 5px rgba(9, 9, 9, 0.1);
+    transition: 0.5s;
+}
+
+.product-card:hover {
+    z-index: 10;
+}
+
+.product-card__inbasket-btn>svg:last-child {
+    display: none;
+}
+
+.product-card__inbasket-btn:hover>svg:nth-of-type(2) {
+    display: block;
+}
+
+.product-card__inbasket-btn:hover>svg:nth-of-type(1) {
+    display: none;
+}
+
+.product-card__inbasket-btn:hover>p {
+    color: var(--txt-White);
+}
+
+.product-card__like--active {
+    background-image: url('../../images/icons/heart-active.svg');
+}
+
+.product-card__basket-btn--active {
+    visibility: visible;
+    opacity: 1;
+}
+.product-card__inbasket-btn--noactive {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.product-card__basket-btn {
+    display: flex;
+    visibility: hidden;
+    opacity: 0;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    bottom: -70px;
+    z-index: 5;
+    width: 289px;
+    height: 100px;
+    background-color: #F5F5F5;
+    padding: 20px 30px 30px 30px;
+    font-family: 'Jost';
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 100%;
+    text-align: center;
+    color: var(--txt-Dark);
+    box-shadow: 20px 20px 10px 5px rgba(9, 9, 9, 0.1);
+    transition: 0.5s;
+}
+
+.button-minus,
+.button-plus {
+    width: 50px;
+    height: 50px;
+    position: relative;
+}
+
+.button-minus>svg:first-child {
+    position: absolute;
+    left: 20px;
+    top: 24px;
+    z-index: 2;
+}
+
+.button-plus>svg:first-child {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    z-index: 2;
+}
+
+.product-card__basket-btn p:last-child {
+    line-height: 130%;
+    color: var(--txt-Gray);
+}
