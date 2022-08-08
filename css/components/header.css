@@ -155,12 +155,13 @@
 .header__catalog-list {
     position: relative;
     height: 35px;
- }
+}
 
 .header__catalog-list--dropdown {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 15px;
 }
 
 .header__catalog-list--link {
@@ -213,7 +214,7 @@
     transform: rotate(45deg);
 }
 
-.header__catalog-list--item:hover .header__catalog-menu--categories>a {
+.header__catalog-menu--categories>a {
     color: var(--txt-Orange);
     background-image: url('../../images/line-active/Line-active-brands.svg');
     background-repeat: no-repeat;
@@ -293,6 +294,7 @@
 
 .header__catalog-sub-menu--link:hover {
     color: var(--txt-Orange);
+    cursor: pointer;
 }
 
 .header__catalog-menu--brands:hover>a {
@@ -302,9 +304,16 @@
     background-position: center bottom;
 }
 
-.header__catalog-menu--brands:hover:first-of-type>a {
+.header__catalog-menu:nth-child(2):hover :nth-child(1)>a {
     background: none;
     color: var(--txt-Dark);
+}
+
+.header__catalog-menu--categories:hover>a {
+    color: var(--txt-Orange) !important;
+    background-image: url('../../images/line-active/Line-active-brands.svg') !important;
+    background-repeat: no-repeat !important;
+    background-position: center bottom !important;
 }
 
 .header__catalog-menu--brands:hover>.header__catalog-sub-menu--brands {

@@ -2,7 +2,7 @@
     position: relative;
     z-index: 0;
     width: 289px;
-    min-height: 384px;
+    height: 384px;
     background-color: #F5F5F5;
     padding-top: 15px;
     margin-top: 20px;
@@ -35,6 +35,20 @@
     z-index: 2;
 }
 
+
+.product-card__like--noactive {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    z-index: 3;
+    opacity: 0;
+}
+
+.product-card__like--active {
+    opacity: 1;
+}
+
+
 .product-card__name {
     display: block;
     font-family: 'Jost';
@@ -59,7 +73,7 @@
     margin-left: 3px;
 }
 
-.product-card__inbasket-btn {
+.product-card__inbasket {
     display: block;
     opacity: 0;
     visibility: hidden;
@@ -70,7 +84,17 @@
     width: 289px;
     height: 100px;
     background-color: #F5F5F5;
+
+}
+
+.product-card__inbasket-btn {
     padding: 20px 15px 30px 15px;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    background-color: #F5F5F5;
 }
 
 .product-card__inbasket-btn>p {
@@ -88,18 +112,16 @@
 .product-card:hover {
     box-shadow: 20px -18px 10px 5px rgba(9, 9, 9, 0.1);
     transform: translateY(-25px);
+    z-index: 10;
     transition: 0.5s;
+    cursor: pointer;
 }
 
-.product-card:hover .product-card__inbasket-btn {
+.product-card:hover .product-card__inbasket {
     opacity: 1;
     visibility: visible;
     box-shadow: 20px 20px 10px 5px rgba(9, 9, 9, 0.1);
     transition: 0.5s;
-}
-
-.product-card:hover {
-    z-index: 10;
 }
 
 .product-card__inbasket-btn>svg:last-child {
@@ -118,32 +140,19 @@
     color: var(--txt-White);
 }
 
-.product-card__like--active {
-    background-image: url('../../images/icons/heart-active.svg');
-}
-
-.product-card__basket-btn--active {
-    visibility: visible;
-    opacity: 1;
-}
 .product-card__inbasket-btn--noactive {
+    z-index: 1;
     opacity: 0;
-    visibility: hidden;
 }
 
 .product-card__basket-btn {
     display: flex;
-    visibility: hidden;
-    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
     justify-content: space-between;
     align-items: center;
-    position: absolute;
-    left: 0;
-    bottom: -70px;
-    z-index: 5;
-    width: 289px;
-    height: 100px;
-    background-color: #F5F5F5;
     padding: 20px 30px 30px 30px;
     font-family: 'Jost';
     font-weight: 400;
@@ -151,8 +160,10 @@
     line-height: 100%;
     text-align: center;
     color: var(--txt-Dark);
-    box-shadow: 20px 20px 10px 5px rgba(9, 9, 9, 0.1);
-    transition: 0.5s;
+}
+
+.product-card__basket-btn p {
+    max-width: 100px;
 }
 
 .button-minus,

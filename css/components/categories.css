@@ -11,7 +11,6 @@
 
 .categories__list--link {
     font-family: 'Jost';
-    font-style: normal;
     font-weight: 500;
     font-size: 30px;
     line-height: 115%;
@@ -28,13 +27,37 @@
     background-position: center bottom;
 }
 
+.categories__list--hit {
+    color: var(--txt-Orange);
+    background-image: url('../../images/line-active/categories-line-active.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
 .categiries__catalog {
     margin: 0 352px 0 352px;
 }
 
-.categiries__catalog--hit-product {
+.categiries__catalog--products {
     display: flex;
     flex-wrap: wrap;
     max-width: 1216px;
     justify-content: space-between;
+}
+
+.categiries__catalog--popular-product {
+    display: none;
+}
+
+.categiries__catalog--new-product {
+    display: none;
+}
+
+.categiries__catalog--discount-product {
+    display: none;
+}
+
+.categiries__catalog--active {
+    display: flex;
 }

@@ -67,17 +67,4 @@
     border-radius: 0 !important;
 }
 
-.swiper-button-prev:after, .swiper-button-next:after {
-    display: none;
-}
-
-.swiper-button-next  {
-    top: 97% !important;
-    right: 55px !important;
-}
-
-.swiper-button-prev {
-    top: 97% !important;
-    left: 55px !important;
-}
 
