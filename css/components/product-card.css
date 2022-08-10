@@ -6,10 +6,12 @@
     background-color: #F5F5F5;
     padding-top: 15px;
     margin-top: 20px;
+    list-style-type: none;
 }
 
 .product-card__lable {
     position: absolute;
+    display: inline-block;
     top: 30px;
     left: 30px;
     z-index: 2;
@@ -25,7 +27,54 @@
     font-size: 15px;
     line-height: 130%;
     color: var(--txt-Orange);
+}
 
+.product-card__lable--hit {
+    position: absolute;
+    z-index: 3;
+    top: 4px;
+    left: 10px;
+    font-family: 'Jost';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 130%;
+    color: #755FBB;
+}
+
+.product-card__lable--stock {
+    position: absolute;
+    z-index: 3;
+    top: 4px;
+    left: 10px;
+    font-family: 'Jost';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 130%;
+    color: #5FBBA3;
+}
+
+.product-card__lable--notinstock {
+    position: absolute;
+    z-index: 3;
+    top: 4px;
+    left: 10px;
+    font-family: 'Jost';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 130%;
+    color: #636B78;
+}
+
+.product-card__lable--discount {
+    position: absolute;
+    z-index: 3;
+    top: 4px;
+    left: 10px;
+    font-family: 'Jost';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 130%;
+    color: #C82A2A;
 }
 
 .product-card__like {
@@ -57,20 +106,34 @@
     line-height: 140%;
     color: var(--txt-Dark);
     margin: 11px 30px 10px 30px;
+    min-height: 48px;
 }
 
 .product-card__price {
+    display: inline-block;
     font-family: 'Jost';
     font-weight: 700;
     font-size: 24px;
     line-height: 130%;
     color: var(--txt-Orange);
-    margin: 0 auto 30px 30px;
+    margin: 0 0 30px 30px;
 }
 
 .product-card__price::after {
     content: "\20BD";
-    margin-left: 3px;
+    margin-left: 5px;
+}
+
+.product-card__price-stock {
+    display: inline-block;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+    text-decoration-line: line-through;
+    color: var(--txt-Gray-2);
+    margin: 0 0 30px 7px;
 }
 
 .product-card__inbasket {

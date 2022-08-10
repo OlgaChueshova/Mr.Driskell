@@ -73,12 +73,12 @@ class Slider {
 
     createElement() {
         const btnPrev = document.createElement('btnPrev');
-        btnPrev.classList.add('slider-button-prev');
+        btnPrev.classList('.slider-button-prev');
         btnPrev.addEventListener('click', prev);
     }
     createElement() {
         const btnNext = document.createElement('btnNext');
-        btnNext.classList.add('slider-button-next');
+        btnNext.classList('.slider-button-next');
         btnPrev.addEventListener('click', next);
     }
 

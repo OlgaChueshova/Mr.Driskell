@@ -22,16 +22,22 @@
 
 .product-card-3 .swiper-slide {
     background-color: #F5F5F5;
-    background-image: url('../../images/products/prod3.jpg');
+    background-image: url('../../images/products/prod3k.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .product-card-4 .swiper-slide {
     background-color: #F5F5F5;
-    background-image: url('../../images/products/prod4.jpg');
+    background-image: url('../../images/products/prod4k.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .product-card-5 .swiper-slide {
-    background-image: url('../../images/products/prod5.jpg');
+    background-image: url('../../images/products/prod5k.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .product-card-6 .swiper-slide {
@@ -39,11 +45,15 @@
 }
 
 .product-card-7 .swiper-slide {
-    background-image: url('../../images/products/prod7.jpg');
+    background-image: url('../../images/products/prod7k.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .product-card-8 .swiper-slide {
-    background-image: url('../../images/products/prod8.jpg');
+    background-image: url('../../images/products/prod8k.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .swiper-horizontal>.swiper-pagination-bullets,
