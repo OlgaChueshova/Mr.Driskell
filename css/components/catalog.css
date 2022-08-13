@@ -1,0 +1,155 @@
+.catalog {
+    display: block;
+    margin: 120px 352px 50px 352px;
+}
+
+.catalog-titel {
+    font-family: 'Forum';
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 100%;
+    color: var(--txt-Dark);
+    text-align: center;
+}
+
+.catalog__grid-container {
+    display: grid;
+    width: 100%;
+    height: 1570px;
+    margin-top: 50px;
+    grid-template-columns: 2fr repeat(3, 1fr) 2fr;
+    grid-template-rows: repeat(4, 350px);
+    grid-gap: 20px;
+    grid-template-areas: 'set set hol hol hol'
+        'car ped ped ped pai'
+        'bl bl tip tip need'
+        'oth acc acc prin prin';
+}
+
+.catalog__grid-container--sets {
+    grid-area: set;
+    background-image: url('../../images/catalog/sets.jpg');
+    background-size: 347px 350px;
+    background-position-x: 75%;
+    background-position-y: top;
+    background-repeat: no-repeat;
+    background-color: var(--bg-Card);
+}
+
+.catalog__grid-container--holders {
+    grid-area: hol;
+    background-image: url('../../images/catalog/holders.jpg');
+    background-size: 535px 265px;
+    background-position-x: center;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    background-color: var(--bg-Card);
+}
+
+.catalog__grid-container--cars {
+    grid-area: car;
+    background-image: url('../../images/catalog/cars.jpg');
+    background-size: 259px 259px;
+    background-position-x: center;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    background-color: var(--bg-Card);
+}
+
+.catalog__grid-container--pedals {
+    grid-area: ped;
+    background-image: url('../../images/catalog/pedals.jpg');
+    background-size: 351px 350px;
+    background-position-x: right;
+    background-position-y: top;
+    background-repeat: no-repeat;
+    background-color: var(--bg-Card);
+}
+
+.catalog__grid-container--paints {
+    grid-area: pai;
+    background-image: url('../../images/catalog/paints.jpg');
+    background-size: 308px 266px;
+    background-position-x: center;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    background-color: var(--bg-Card);
+}
+
+.catalog__grid-container--blocks {
+    grid-area: bl;
+    background-image: url('../../images/catalog/blocks.jpg');
+    background-size: 441px 250px;
+    background-position-x: center;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    background-color: var(--bg-Card);
+}
+
+.catalog__grid-container--tips {
+    grid-area: tip;
+    background-image: url('../../images/catalog/tips.jpg');
+    background-size: 309px 266px;
+    background-position-x: center;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    background-color: var(--bg-Card);
+}
+
+.catalog__grid-container--needles {
+    grid-area: need;
+    background-image: url('../../images/catalog/needles.jpg');
+    background-size: 308px 266px;
+    background-position-x: center;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    background-color: var(--bg-Card);
+}
+
+.catalog__grid-container--other {
+    grid-area: oth;
+    background-image: url('../../images/catalog/other.jpg');
+    background-size: 277px 240px;
+    background-position-x: center;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    background-color: var(--bg-Card);
+}
+
+.catalog__grid-container--accessories {
+    grid-area: acc;
+    background-image: url('../../images/catalog/accessories.jpg');
+    background-size: 250px 240px;
+    background-position-x: center;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    background-color: var(--bg-Card);
+}
+
+.catalog__grid-container--printers {
+    grid-area: prin;
+    background-image: url('../../images/catalog/printers.jpg');
+    background-size: 439px 366px;
+    background-position-x: center;
+    background-position-y: top;
+    background-repeat: no-repeat;
+    background-color: var(--bg-Card);
+}
+
+.catalog__grid-container--link {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 110%;
+    color: var(--txt-Dark);
+}
+
+.catalog__grid-container--title {
+    margin-left: 50px;
+    margin-top: 40px;
+}
+
+.catalog__grid-container--link:hover {
+    cursor: pointer;
+    color: var(--title-aktive);
+}

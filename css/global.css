@@ -15,5 +15,9 @@
     --White: var(--txt-White);
 
     --title-aktive: var(--txt-Orange);
+
+    --bg: #EEEEEE;
+    --bg-Grey:  #919191;
+    --bg-Card: #F5F5F5;
  }
 

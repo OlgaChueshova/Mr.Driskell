@@ -71,17 +71,33 @@ class Slider {
         }
     }
 
-    createElement() {
-        const btnPrev = document.createElement('btnPrev');
-        btnPrev.classList('.slider-button-prev');
-        btnPrev.addEventListener('click', prev);
-    }
-    createElement() {
-        const btnNext = document.createElement('btnNext');
-        btnNext.classList('.slider-button-next');
-        btnPrev.addEventListener('click', next);
-    }
+    // createNavigaton() {
+    //     const nav = document.createElement('nav');
+    //     const btnPrev = document.createElement('btnPrev');
+    //     btnPrev.classList.add('slider-button-prev');
+    //     const btnNext = document.createElement('btnNext');
+    //     btnPrev.classList.add('slider-button-prev');
+
+    //     btnPrev.addEventListener('click', prev);
+    //     btnNext.addEventListener('click', next);
+    // }
+
+    // createElement() {
+    //     const btnPrev = document.querySelector('.slider-button-prev');
+    //     btnPrev.addEventListener('click', prev());
+    // }
+
+    // createElement() {
+    //     const btnNext = document.createElement('.slider-button-next');
+    //     btnNext.addEventListener('click', next());
+    // }
 
 }
 
 new Slider('slider__wrapper');
+
+const btnPrev = document.querySelector('.slider-button-prev');
+btnPrev.addEventListener('click', prev);
+
+const btnNext = document.createElement('.slider-button-next');
+btnNext.addEventListener('click', next);

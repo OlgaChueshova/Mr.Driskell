@@ -1,0 +1,152 @@
+.popular-brands {
+    display: block;
+    margin: 115px 352px 120px 352px;
+}
+
+.popular-brands__title {
+    font-family: 'Forum';
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 100%;
+    color: var(--txt-Dark);
+
+}
+
+.popular-brands__link {
+    text-decoration: none;
+    font-family: 'Jost';
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 140%;
+    color: var(--txt-Dark);
+    margin-left: 1072px;
+}
+
+.sliderBrands {
+    width: 1216px;
+    height: 204px;
+}
+
+.slider-slide-bg {
+background-color: var(--bg-Grey);
+}
+
+.sliderBrands-wrapper--link {
+    padding: 20px;
+    text-decoration: none;
+}
+
+.sliderBrands-wrapper--link:nth-last-of-type(1) {
+    padding-left: 0;
+}
+.sliderBrands-wrapper--link:nth-last-of-type(6) {
+    padding-left: 0;
+}
+
+.sliderBrands-wrapper__list {
+    display: grid;
+    grid-template-rows: repeat(2, 82px);
+    grid-template-columns: repeat(5, 211px);
+    grid-gap: 40px;
+    grid-template-areas: 'kuro han rev al der'
+        'fac oc ink chey kwa';
+    background-image: url('../../images/dividers/row-line.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sliderBrands-wrapper__background1 {
+    background-image: url('../../images/dividers/column-line.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: 229px;
+}
+.sliderBrands-wrapper__background2 {
+    background-image: url('../../images/dividers/column-line.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: 480px;
+}
+.sliderBrands-wrapper__background3 {
+    background-image: url('../../images/dividers/column-line.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: 730px;
+}
+.sliderBrands-wrapper__background4 {
+    background-image: url('../../images/dividers/column-line.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: 980px;
+}
+
+.sliderBrands-wrapper__list--item {
+    list-style-type: none;
+}
+
+.sliderBrands-wrapper__list--KuroSumi {
+    grid-area: kuro;
+}
+
+.sliderBrands-wrapper__list--Hanafy {
+    grid-area: han;
+}
+
+.sliderBrands-wrapper__list--TatooRevive {
+    grid-area: rev;
+}
+
+.sliderBrands-wrapper__list--Aloe {
+    grid-area: al;
+}
+
+.sliderBrands-wrapper__list--Dermalize {
+    grid-area: der;
+}
+
+.sliderBrands-wrapper__list--FaceBody {
+    grid-area: fac;
+}
+
+.sliderBrands-wrapper__list--Ocean {
+    grid-area: oc;
+}
+
+.sliderBrands-wrapper__list--Ink {
+    grid-area: ink;
+}
+
+.sliderBrands-wrapper__list--Cheyenne {
+    grid-area: chey;
+}
+
+.sliderBrands-wrapper__list--Kwadron {
+    grid-area: kwa;
+}
+
+.swiper-btn-prev {
+    background-image: url('../../images/icons/prev.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 2px solid var(--Orange);
+    width: 50px !important;
+    height: 50px !important;
+    left: -20px !important;
+    background-color: var(--bg);
+}
+.swiper-btn-next {
+    background-image: url('../../images/icons/next.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 2px solid var(--Orange);
+    width: 50px !important;
+    height: 50px !important;
+    right: -20px !important;
+    background-color: var(--bg);
+}
+
+/* .swiper-button-next, .swiper-button-prev {
+    visibility: hidden !important;
+    opacity: 0 !important;
+} */

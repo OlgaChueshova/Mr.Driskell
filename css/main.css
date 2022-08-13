@@ -8,6 +8,9 @@
 @import url('./components/categories.css');
 @import url('./components/product-card.css');
 @import url('./components/slider-product-card.css');
+@import url('./components/catalog.css');
+@import url('./components/special-offers.css');
+@import url('./components/popular-brands.css');
 
 * {
     box-sizing: border-box;

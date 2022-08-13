@@ -224,6 +224,11 @@
     text-align: center;
     color: var(--txt-Dark);
 }
+/* 
+.product-card__basket-btn--active {
+    z-index: 3;
+    opacity: 1;
+} */
 
 .product-card__basket-btn p {
     max-width: 100px;
