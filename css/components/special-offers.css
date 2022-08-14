@@ -3,7 +3,7 @@
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 20px;
     width: 100vw;
-    height: 470px;
+    min-height: 470px;
     background-color: var(--bg-Grey);
     font-weight: 700;
     font-size: 40px;

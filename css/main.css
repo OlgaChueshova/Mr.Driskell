@@ -11,6 +11,7 @@
 @import url('./components/catalog.css');
 @import url('./components/special-offers.css');
 @import url('./components/popular-brands.css');
+@import url('./components/information.css');
 
 * {
     box-sizing: border-box;
@@ -21,7 +22,12 @@ body {
     font-weight: 400;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Forum', sans-serif;
+    font-weight: 400; 
+}
+
 main {
-    background: #919191;
+    background: var(--bg-Grey);
     padding-top: 120px;
 }

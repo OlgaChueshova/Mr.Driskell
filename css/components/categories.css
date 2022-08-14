@@ -49,7 +49,6 @@
 .categories__catalog--item {
     display: flex;
     flex-wrap: wrap;
-    max-width: 1216px;
     justify-content: space-between;
     margin: 0 352px 0 352px;
 }
