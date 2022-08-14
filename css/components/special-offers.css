@@ -1,29 +1,24 @@
 .special-offers {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
     width: 100vw;
     height: 470px;
     background-color: var(--bg-Grey);
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 130%;
+    color: var(--txt-White);
 }
 
 .special-offers__paints {
     background-image: url('../../images/special-offers/paints.jpg');
     background-size: 100% 100%;
-    flex: 1 1 auto;
-    margin-right: 20px;
-
 }
 
 .special-offers__hit {
     background-image: url('../../images/special-offers/hits.jpg');
     background-size: 100% 100%;
-    flex: 1 1 auto;
-}
-
-.special-offers {
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 130%;
-    color: var(--txt-White);
 }
 
 .special-offers__paints--title {
@@ -51,11 +46,12 @@
 }
 
 .special-offers__paints--link {
-  margin-top: 298px;
-  margin-left: 355px;
+    margin-top: 298px;
+    margin-left: 355px;
 }
 
 .special-offers__hit--link {
-  margin-top: 246px;
-  margin-left: 53px;
+    margin-top: 246px;
+    margin-left: 53px;
 }
+
