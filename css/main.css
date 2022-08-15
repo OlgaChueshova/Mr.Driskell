@@ -12,6 +12,9 @@
 @import url('./components/special-offers.css');
 @import url('./components/popular-brands.css');
 @import url('./components/information.css');
+@import url('./components/reviews.css');
+@import url('./components/subscription.css');
+@import url('./components/footer.css');
 
 * {
     box-sizing: border-box;
@@ -30,4 +33,8 @@ h1, h2, h3, h4, h5, h6 {
 main {
     background: var(--bg-Grey);
     padding-top: 120px;
+}
+
+a:hover {
+    transition: .5s;
 }

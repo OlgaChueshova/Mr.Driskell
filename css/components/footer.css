@@ -1,0 +1,88 @@
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--Black);
+    background-image: url('../../images/dividers/bg-footer.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: 1073px;
+    min-height: 400px;
+    width: 100vw;
+}
+
+.footer__logo {
+    width: 175px;
+    height: 67px;
+    
+}
+
+.footer__list--link {
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 133.5%;
+    color: var(--White);
+}
+
+.footer__list--link:first-child {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+}
+
+.footer__list--link:hover {
+    color: var(--txt-Orange);
+    transition: .5s;
+}
+
+.footer__list--item {
+    list-style-type: none;
+}
+
+.footer__list {
+    display: grid;
+    width: 615px;
+    height: 141px;
+    margin-top: 139px;
+    margin-left: 352px;
+    grid-template-columns: 238px 141px 84px;
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 71px;
+    grid-template-areas: 'log prom inf'
+                         'log st con'
+                         'pol hel emp';
+}
+
+.footer__list--item-logo {
+    grid-area: log;
+}
+
+.footer__list--item-politics {
+    grid-area: pol;
+}
+
+.footer__list--item-promocodes {
+    grid-area: prom;
+}
+
+.footer__list--item-stock {
+    grid-area: st;
+}
+
+.footer__list--item-help {
+    grid-area: hel;
+}
+
+.footer__list--item-aboutus {
+    grid-area: inf;
+}
+
+.footer__list--item-contacts {
+    grid-area: con;
+}
+
+.footer__list--item-empty {
+    grid-area: emp;
+}
+

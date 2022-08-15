@@ -1,0 +1,64 @@
+.reviews {
+    display: block;
+    width: 100vw;
+    height: fit-content;
+    margin-top: 120px;
+}
+
+.reviews__title {
+    font-size: 60px;
+    line-height: 100%;
+    color: var(--txt-Dark);
+    display: block;
+    text-align: center;
+    margin-bottom: 147px;
+}
+
+.swiperReviews {
+    width: 1356px;
+    height: 379px;
+    /* overflow: visible !important;
+    opacity: 0.5; */
+}
+
+.swiper-reviews__slide {
+    width: 598px !important;
+    height: 307px !important;
+    background-color: var(--Black);
+    
+   
+}
+
+.swiper-reviews__btn-prev {
+    background-image: url('../../images/icons/prev.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 2px solid var(--Orange);
+    width: 50px !important;
+    height: 50px !important;
+    top: 47% !important;
+    background-color: var(--bg);
+    overflow: visible !important;
+}
+
+.swiper-reviews__btn-next {
+    background-image: url('../../images/icons/next.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 2px solid var(--Orange);
+    width: 50px !important;
+    height: 50px !important;
+    background-color: var(--bg);
+    top: 47% !important;
+    overflow: visible !important;
+}
+
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+    content: none !important;
+}
+
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+    content: none !important;
+}
