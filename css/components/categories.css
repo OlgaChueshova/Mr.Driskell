@@ -1,18 +1,25 @@
-.categories {
+/* .categories {
     display: block;
     margin: 0 352px 0 352px;
-
-}
+} */
 
 .categories-wrapper {
-    background: var(--bg-Grey);
+    position: relative;
+    max-width: 987vw;
+    min-height: 1216px;
+    display: block;
+    margin: 120px 352px 0 352px;
+}
+
+.categories {
+    display: block;
+    width: 100%;
 }
 
 .categories__list {
     display: flex;
     justify-content: space-around;
     margin-bottom: 7px;
-
 }
 
 .categories__list--link {
@@ -33,80 +40,23 @@
     background-position: center bottom;
 }
 
-.categories__list--link-noactive {
-    color: var(--txt-Dark);
-    background: none;
-}
-
-.categories__catalog {
-    margin: 0 352px 0 352px;
-}
-
-.categories__catalog--list {
-    list-style-type: none;
-}
-
 .categories__catalog--item {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 0 352px 0 352px;
+    list-style-type: none;
+    position: absolute;
+    left: 0;
+    top: 79px;
+    opacity: 0;
+    visibility: hidden;
 }
 
-.categories__catalog--popular-product {
-    display: none;
+.categories__catalog--item-active {
+    opacity: 1;
+    visibility: visible;
 }
 
-.categories__catalog--new-product {
-    display: none;
-}
-
-.categories__catalog--stock-product {
-    display: none;
-}
-
-
-.categories__catalog--popular-product-active {
-    display: flex;
-}
-
-.categories__catalog--new-product-active {
-    display: flex;
-}
-
-.categories__catalog--stock-product-active {
-    display: flex;
-}
-
-.categories__catalog--hit-product-active {
-    display: flex;
-}
-
-.categories__catalog--popular-product-noactive {
-    display: none;
-}
-
-.categories__catalog--new-product-noactive {
-    display: none;
-}
-
-.categories__catalog--stock-product-noactive {
-    display: none;
-}
-
-.categories__catalog--hit-product-noactive {
-    display: none;
-}
-
-
-/* 
-.categories__catalog--active {
-    display: flex;
-}
-
-.categories__catalog--noactive {
-    display: none;
-} */
 
 .categories__catalog--show-more-wrapper {
     display: block;
@@ -114,10 +64,12 @@
     height: 70px;
     background-image: url('../../images/buttons/showmore-btn.svg');
     background-color: var(--bg-Grey);
-    margin: 50px 822px 50px 823px;
     outline: 0 !important;
     border: 0 !important;
     padding: 0 !important;
+    position: absolute;
+    bottom: 120px;
+    left: 470px;
 }
 
 .categories__catalog--show-more-wrapper:hover {
@@ -135,5 +87,4 @@
     font-size: 20px;
     line-height: 150%;
     color: var(--txt-Orange);
-    text-align: center;
 }

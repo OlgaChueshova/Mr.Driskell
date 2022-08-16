@@ -5,6 +5,8 @@
     margin-top: 100px;
     padding-bottom: 200px;
     width: 100vw;
+    position: relative;
+    margin-top: 100px;
 }
 
 .subscription__image {
@@ -67,7 +69,8 @@ label {
     margin-bottom: 22px;
 }
 
-#subscription-email, #subscription-name {
+#subscription-email,
+#subscription-name {
     width: 392px;
     height: 70px;
     margin-top: 9px;
@@ -96,4 +99,46 @@ label {
 
 .subscription__form--btn {
     margin-top: 35px;
+}
+
+.subscripcion__button-up {
+    display: flex;
+    width: 262px;
+    height: 90px;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    right: 379px;
+    bottom: 349px;
+    background: var(--bg-Card);
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.1);
+}
+
+.subscripcion__button-up--link {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 150%;
+    color: var(--txt-Orange);
+    text-align: center;
+    text-decoration: none;
+}
+
+.subscripcion__button-up--btn {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border: 1px solid var(--Orange);
+    background-image: url('../../images/icons/btn-up.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.subscripcion__button-up:hover {
+    background-color: var(--bg);
+    width: 266px;
+    height: 94px;
+    transition: .5s;
+    right: 377px;
+    bottom: 347px;
 }

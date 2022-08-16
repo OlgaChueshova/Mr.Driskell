@@ -13,7 +13,12 @@
 .footer__logo {
     width: 175px;
     height: 67px;
-    
+}
+
+.footer__logo:hover {
+    width: 179px;
+    height: 71px;
+    transition: .5s;
 }
 
 .footer__list--link {
@@ -50,8 +55,8 @@
     grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 71px;
     grid-template-areas: 'log prom inf'
-                         'log st con'
-                         'pol hel emp';
+        'log st con'
+        'pol hel emp';
 }
 
 .footer__list--item-logo {
@@ -86,3 +91,139 @@
     grid-area: emp;
 }
 
+.footer__list--link:hover {
+    color: var(--txt-Orange);
+}
+
+
+.footer__list-contacts {
+    display: grid;
+    grid-template-columns: 34px 164px 52px 52px 40px;
+    grid-template-rows: 40px 26px 50px;
+    grid-row-gap: 12px;
+    grid-template-areas: 'ph num tel phon vib'
+        'work work work work work'
+        'em eml eml eml eml';
+    margin-top: 129px;
+    margin-left: 395px;
+}
+
+.footer__list-contacts--phone {
+    grid-area: ph;
+    display: block;
+    width: 19px;
+    height: 19px;
+    transform: translateY(10px);
+}
+
+.footer__list-contacts--phone-number {
+    grid-area: num;
+}
+
+.footer__list-contacts--phone-number>a {
+    display: block;
+    font-size: 20px;
+    line-height: 150%;
+    color: var(--txt-White);
+    text-decoration: none;
+    padding-top: 6px;
+}
+
+.footer__list-contacts--phone-number>a:hover {
+    font-size: 21px;
+    transition: .5s;
+}
+
+.footer__list-contacts--telegram {
+    grid-area: tel;
+}
+
+.footer__list-contacts--telegram>a,
+.footer__list-contacts--phone-link>a,
+.footer__list-contacts--viber>a {
+    display: block;
+    background: var(--Black);
+    border: 1px solid var(--Orange);
+    width: 40px;
+    height: 40px;
+}
+
+.footer__list-contacts--telegram>a {
+    background-image: url('../../images/icons/telegram.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+}
+
+.footer__list-contacts--phone-link>a {
+    background-image: url('../../images/icons/phone.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+}
+
+.footer__list-contacts--viber>a {
+    background-image: url('../../images/icons/viber.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 65%;
+}
+
+.footer__list-contacts--telegram>a:hover {
+    border: 1px solid var(--Dark-Orange);
+    background-image: url('../../images/icons/telegram-active.svg');
+}
+
+.footer__list-contacts--phone-link>a:hover {
+    border: 1px solid var(--Dark-Orange);
+    background-image: url('../../images/icons/phone-active.svg');
+}
+
+.footer__list-contacts--viber>a:hover {
+    border: 1px solid var(--Dark-Orange);
+    background-image: url('../../images/icons/viber-active.svg');
+}
+
+.footer__list-contacts--phone-link {
+    grid-area: phon;
+}
+
+.footer__list-contacts--viber {
+    grid-area: vib;
+}
+
+.footer__list-contacts--working-hours {
+    grid-area: work;
+}
+
+.footer__list-contacts--working-hours>p {
+    font-size: 17px;
+    line-height: 150%;
+    color: var(--txt-Gray-2);
+    padding-bottom: 32px;
+}
+
+.footer__list-contacts--email {
+    grid-area: em;
+    width: 20px;
+    height: 16px;
+    transform: translateY(27px);
+}
+
+.footer__list-contacts--email-link {
+    grid-area: eml;
+}
+
+.footer__list-contacts--email-link>a {
+    display: block;
+    margin-top: 20px;
+    line-height: 150%;
+    font-size: 20px;
+    color: var(--txt-White);
+    text-decoration: none;
+}
+
+.footer__list-contacts--email-link>a:hover {
+    font-size: 21px;
+    transition: .5s;
+}

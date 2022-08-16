@@ -15,19 +15,27 @@
 }
 
 .swiperReviews {
-    width: 1356px;
-    height: 379px;
-    /* overflow: visible !important;
-    opacity: 0.5; */
+    width: 1216px;
+    height: 307px;
+    overflow: visible !important;
+    opacity: 0.5;
 }
 
 .swiper-reviews__slide {
     width: 598px !important;
     height: 307px !important;
     background-color: var(--Black);
-    
-   
+
 }
+
+
+
+.swiper-slide-active {
+    width: 598px !important;
+    height: 307px !important;
+}
+
+
 
 .swiper-reviews__btn-prev {
     background-image: url('../../images/icons/prev.svg');
@@ -38,7 +46,6 @@
     height: 50px !important;
     top: 47% !important;
     background-color: var(--bg);
-    overflow: visible !important;
 }
 
 .swiper-reviews__btn-next {
@@ -50,7 +57,7 @@
     height: 50px !important;
     background-color: var(--bg);
     top: 47% !important;
-    overflow: visible !important;
+    /* overflow: visible !important; */
 }
 
 .swiper-button-prev:after,
@@ -61,4 +68,34 @@
 .swiper-button-next:after,
 .swiper-rtl .swiper-button-prev:after {
     content: none !important;
+} 
+
+.swiper-reviews__slide {
+    padding: 50px;
+}
+
+.swiper-reviews__slide--text {
+    font-size: 17px;
+    line-height: 140%;
+    color: var(--txt-Gray);
+}
+
+.swiper-reviews__slide--instagram {
+    display: block;
+    width: 28px;
+    height: 28px;
+    background-color: var(--Black);
+    border: 1px solid var(--Orange);
+    background-image: url('../../images/icons/instagram.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    float: left;
+    margin-right: 15px;
+}
+
+.swiper-reviews__slide--email {
+    font-family: 'Forum';
+    font-size: 20px;
+    line-height: 130%;
+    color: var(--txt-Orange)
 }
