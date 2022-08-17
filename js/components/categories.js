@@ -9,35 +9,35 @@ function callback(target, callback) {
 }
 
 
-const nav = document.querySelector('.categories');
-const linkCollection = document.querySelectorAll('.categories__list--item');
-const catalogCollection = document.querySelectorAll('.categories__catalog--item');
 
-function addCatalog(evt) {
+
+const categories = document.querySelector('.categories');
+
+
+// const linkCollection = document.querySelectorAll('.categories__list--link');
+
+function activeCatalog(evt) {
+
     const target = evt.target.closest('.categories__list--item');
-    if (target) {
-        target.classList.add('categories__list--item-active');
-        const isActive = target.classList.contains('categories__list--item-active');
-        function showCatalog {
-            target.querySelector('.categories__catalog--item'),
-                opacity: isActive ? 1 : 0,
-                    visibility: isActive ? visible : hidden,
 
-                        useClickOtherLink(target, function () {
-                            target.classList.remove('categories__list--item-active');
-                            opacity: isActive ? 0 : 1,
-                            visibility: isActive ? hidden : visible,
-                        });
-        }
+    const itemCollection = document.querySelectorAll('.categories__list--item');
 
+    for (let i = 0; i < itemCollection.length; i++) {
+
+        const link = itemCollection[i];
+
+        link.classList.remove('categories__list--item-active');
+       
     }
+
+   target.classList.add('categories__list--item-active');
+
+
 
 
 }
 
 
 
-
-
-nav.addEventListener('click', addCatalog);
+categories.addEventListener('click', activeCatalog);
 

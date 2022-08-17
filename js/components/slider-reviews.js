@@ -5,7 +5,7 @@ const swiper = new Swiper('.swiperReviews', {
   slidesPerView: 2,
   spaceBetween: 20,
   slideActiveClass: 'swiper-slide-active',
-  slideDublicateActiveClass: 'swiper-slide-duplicate-active',
+  // slideDublicateActiveClass: 'swiper-slide-duplicate-active',
   // watchOverflow: true,
   watchSlidesProgress: true,
 

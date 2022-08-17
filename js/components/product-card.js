@@ -1,8 +1,7 @@
 const likeCollection = document.querySelectorAll('.product-card__like--noactive');
-const catalog = document.querySelector('.categiries__catalog');
+const catalog = document.querySelector('.categiries__catalog--item');
 
 let sumCollection = document.querySelectorAll('#sum');
-sum = 1;
 
 const inBasketBtnCollection = document.querySelectorAll('.product-card__inbasket-btn');
 
@@ -17,34 +16,41 @@ function Basket(evt) {
         case evt.target.closest('.product-card__inbasket-btn'):
             target.classList.add('product-card__inbasket-btn--noactive');
 
-            const basketBtnCollection = document.querySelectorAll('.product-card__basket-btn');
+            for (let i = 0; i < sumCollection.length; i++) {
+                let current = sumCollection[i];
+                current = 1;
 
-            basketBtnCollection.addEventListener('focus', basket);
+                document.getElementById('sum').innerHTML = current;
+                current = 1;
 
-            function basket() {
-                for (let i = 0; i < sumCollection.length; i++) {
-                    let current = sumCollection[i];
-                    current = 1;
-                    // const productCard = current.querySelector('.product-card');
-                    // for (productCard ) {
-                    //     document.getElementById('sum').innerHTML = current;
-                    // };
-                    document.getElementById('sum').innerHTML = current;
-                    current = 1;
-                    if (target) {
-                        target = evt.target.closest('.button-plus');
-                        function addInBasket(current) {
-                            return Math.plus(current++);
-                        };
-                    };
-                    if (target) {
-                        target = evt.target.closest('.button-minus');
-                        function fromBasket(current) {
-                            return Math.minus(current--);
-                        };
-                    };
-                    catalog.addEventListener('click', basket)
-                };
+            // const basketBtnCollection = document.querySelectorAll('.product-card__basket-btn');
+
+            // basketBtnCollection.addEventListener('focus', basket);
+
+            // function basket() {
+            //     for (let i = 0; i < sumCollection.length; i++) {
+            //         let current = sumCollection[i];
+            //         current = 1;
+            //         // const productCard = current.querySelector('.product-card');
+            //         // for (productCard ) {
+            //         //     document.getElementById('sum').innerHTML = current;
+            //         // };
+            //         document.getElementById('sum').innerHTML = current;
+            //         current = 1;
+            //         if (target) {
+            //             target = evt.target.closest('.button-plus');
+            //             function addInBasket(current) {
+            //                 return Math.plus(current++);
+            //             };
+            //         };
+            //         if (target) {
+            //             target = evt.target.closest('.button-minus');
+            //             function fromBasket(current) {
+            //                 return Math.minus(current--);
+            //             };
+            //         };
+            //         catalog.addEventListener('click', basket)
+            //     };
             }
 
 

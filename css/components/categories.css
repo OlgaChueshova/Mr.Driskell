@@ -48,15 +48,27 @@
     position: absolute;
     left: 0;
     top: 79px;
-    opacity: 0;
-    visibility: hidden;
+}
+
+.categories__catalog--item {
+    display: none;
 }
 
 .categories__catalog--item-active {
-    opacity: 1;
-    visibility: visible;
+    display: flex;
 }
 
+.categories__list--item-active .categories__catalog--item {
+    display: flex;
+}
+
+.categories__list--item-active .categories__list--link {
+    color: var(--txt-Orange);
+    background-image: url('../../images/line-active/categories-line-active.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
 
 .categories__catalog--show-more-wrapper {
     display: block;
