@@ -149,6 +149,10 @@
     margin-top: 40px;
 }
 
+.catalog__grid-container--title {
+    margin-left: 35px;
+}
+
 .catalog__grid-container--link:hover {
     cursor: pointer;
     color: var(--title-aktive);

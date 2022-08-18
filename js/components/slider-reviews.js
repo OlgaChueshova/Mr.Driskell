@@ -1,13 +1,19 @@
 const swiper = new Swiper('.swiperReviews', {
   // Optional parameters
   direction: 'horizontal',
-  loop: true,
+  loop: !false,
+
   slidesPerView: 2,
+ 
   spaceBetween: 20,
-  slideActiveClass: 'swiper-slide-active',
-  // slideDublicateActiveClass: 'swiper-slide-duplicate-active',
+
   // watchOverflow: true,
-  watchSlidesProgress: true,
+
+  // slidesPerGroup: 2,
+
+
+
+  slideActiveClass: 'swiper-slide-active',
 
   // If we need pagination
   pagination: {

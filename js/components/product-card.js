@@ -16,12 +16,12 @@ function Basket(evt) {
         case evt.target.closest('.product-card__inbasket-btn'):
             target.classList.add('product-card__inbasket-btn--noactive');
 
-            for (let i = 0; i < sumCollection.length; i++) {
-                let current = sumCollection[i];
-                current = 1;
+            // for (let i = 0; i < sumCollection.length; i++) {
+            //     let current = sumCollection[i];
+            //     current = 1;
 
-                document.getElementById('sum').innerHTML = current;
-                current = 1;
+            //     document.getElementById('sum').innerHTML = current;
+            //     current = 1;
 
             // const basketBtnCollection = document.querySelectorAll('.product-card__basket-btn');
 
@@ -64,12 +64,12 @@ function Basket(evt) {
             //     function fromBasket(current) {
             //         return current--;
             //     };
-            break;
-    }
+    //         break;
+    // }
 }
 
 
-catalog.addEventListener('click', Basket)
+catalog.addEventListener('click', Basket);
 
 
 

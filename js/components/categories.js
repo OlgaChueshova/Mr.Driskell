@@ -1,20 +1,15 @@
 
-function callback(target, callback) {
-    function handleEvent(evt) {
-        if (!target.contains(evt.target)) {
-            callback();
-        }
-    }
-    document.addEventListener('click', handleEvent);
-}
-
-
+// function callback(target, callback) {
+//     function handleEvent(evt) {
+//         if (!target.contains(evt.target)) {
+//             callback();
+//         }
+//     }
+//     document.addEventListener('click', handleEvent);
+// }
 
 
 const categories = document.querySelector('.categories');
-
-
-// const linkCollection = document.querySelectorAll('.categories__list--link');
 
 function activeCatalog(evt) {
 
@@ -32,12 +27,7 @@ function activeCatalog(evt) {
 
    target.classList.add('categories__list--item-active');
 
-
-
-
 }
-
-
 
 categories.addEventListener('click', activeCatalog);
 
