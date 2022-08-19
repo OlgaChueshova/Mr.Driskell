@@ -1,14 +1,4 @@
 
-// function callback(target, callback) {
-//     function handleEvent(evt) {
-//         if (!target.contains(evt.target)) {
-//             callback();
-//         }
-//     }
-//     document.addEventListener('click', handleEvent);
-// }
-
-
 const categories = document.querySelector('.categories');
 
 function activeCatalog(evt) {

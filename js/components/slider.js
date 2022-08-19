@@ -6,7 +6,9 @@ class Slider {
         this.width = this.container.parentElement.getBoundingClientRect().width;
 
         this.initSlider();
-        this.createPagination()
+        this.createPagination();
+        this.next = this.next.bind(this);
+        this.prev = this.next.bind(this);
     }
 
     initSlider() {
@@ -71,16 +73,27 @@ class Slider {
         }
     }
 
-    // createNavigaton() {
-    //     const nav = document.createElement('nav');
-    //     const btnPrev = document.createElement('btnPrev');
-    //     btnPrev.classList.add('slider-button-prev');
-    //     const btnNext = document.createElement('btnNext');
-    //     btnPrev.classList.add('slider-button-prev');
+    createNavigation() {
+        const nav = document.createElement('nav');
+        const img = document.createElement('img');
+        img.src = './'
+        nav.classList.add('slider__navigation'); 
 
-    //     btnPrev.addEventListener('click', prev);
-    //     btnNext.addEventListener('click', next);
-    // }
+        const btnPrev = document.createElement('button');
+        btnPrev.append(img)
+        btnPrev.textContent = 'prev';
+        btnPrev.classList.add('slider-button-prev');
+
+        const btnNext = document.createElement('button');
+        btnNext.append(img)
+        btnNext.classList.add('slider-button-next');
+        btnNext.textContent = 'next';
+
+        btnPrev.addEventListener('click', this.prev);
+        btnNext.addEventListener('click', this.next);
+
+        this.container.parentElement.append(btnPrev, btnNext)
+    }
 
     // createElement() {
     //     const btnPrev = document.querySelector('.slider-button-prev');
@@ -92,12 +105,13 @@ class Slider {
     //     btnNext.addEventListener('click', next());
     // }
 
+
 }
 
-new Slider('slider__wrapper');
+new Slider('slider__wrapper').createNavigation();
 
-const btnPrev = document.querySelector('.slider-button-prev');
-btnPrev.addEventListener('click', prev);
+// const btnPrev = document.querySelector('.slider-button-prev');
+// btnPrev.addEventListener('click', prev);
 
-const btnNext = document.createElement('.slider-button-next');
-btnNext.addEventListener('click', next);
+// const btnNext = document.querySelector('.slider-button-next');
+// btnNext.addEventListener('click', next);
