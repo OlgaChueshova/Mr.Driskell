@@ -37,4 +37,6 @@ main {
 
 a:hover {
     transition: .5s;
+    cursor: pointer;
+    color: var(--txt-Orange);
 }

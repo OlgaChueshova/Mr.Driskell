@@ -40,20 +40,34 @@
     background-position: 2px 2px;
 }
 
-.slider__navigation {
-    
-}
-
 .slider-button-prev {
     display: block;
+    width: 40px;
+    height: 58px;
     position: absolute;
     top: 138px;
     right: 352px;
+    background-image: url('../../images/slider/slider-btn-prev.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: transparent;
+    border: none !important;
+    padding: 0;
 }
 
 .slider-button-next {
     display: block;
+    width: 40px;
+    height: 86px;
     position: absolute;
     bottom: 238px;
     right: 352px;
+    background-image: url('../../images/slider/slider-btn-next.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: transparent;
+    border: none !important;
+    padding: 0;
 }

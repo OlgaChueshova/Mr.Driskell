@@ -1,9 +1,14 @@
 .popular-brands {
     display: block;
     margin: 115px 272px 120px 272px;
+    background-color: var(--bg-Grey);
 }
 
-.popular-brands__title {
+.swiper-slide--popular-brands {
+    background-color: var(--bg-Grey);
+}
+
+.popular-brands__title, .recommendations__title {
     font-family: 'Forum';
     font-weight: 400;
     font-size: 60px;
@@ -12,7 +17,7 @@
     margin-left: 80px;
 }
 
-.popular-brands__link {
+.popular-brands__link, .recommendations__link {
     text-decoration: none;
     font-family: 'Jost';
     font-weight: 400;
@@ -23,12 +28,7 @@
 }
 
 .sliderBrands {
-    width: 1376px;
-    height: 204px;
-}
-
-.slider-slide-bg {
-    background-color: var(--bg-Grey);
+    width: 1375px;
 }
 
 .sliderBrands-wrapper--link {
@@ -130,19 +130,44 @@
     grid-area: kwa;
 }
 
-.swiper-btn-prev {
+
+.swiper-slide--recommendations {
+    padding-bottom: 0 !important;
+    background-color: var(--bg-Grey);
+}
+
+.slider-recommendations-wrapper__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 15px 0 !important;
+    margin: 20px 0 0 0 !important;
+}
+
+.slide-recommendations-wrapper__list--item {
+    transform: none !important;
+    margin: 0 10px 0 10px;
+}
+
+.slide-recommendations-wrapper__list--item:hover {
+    transform: scale(105%) !important;
+    z-index: 10;
+}
+
+.swiper-btn-brands-prev {
     background-image: url('../../images/icons/prev.svg');
     background-position: center;
     background-repeat: no-repeat;
     border: 2px solid var(--Orange);
     width: 50px !important;
     height: 50px !important;
-    top: 47% !important;
+    top: 62% !important;
     background-color: var(--bg);
     overflow: visible !important;
+    outline: 0 !important;
 }
 
-.swiper-btn-next {
+.swiper-btn-brands-next {
     background-image: url('../../images/icons/next.svg');
     background-position: center;
     background-repeat: no-repeat;
@@ -150,8 +175,9 @@
     width: 50px !important;
     height: 50px !important;
     background-color: var(--bg);
-    top: 47% !important;
+    top: 62% !important;
     overflow: visible !important;
+    outline: 0 !important;
 }
 
 .swiper-button-prev:after,
@@ -162,4 +188,5 @@
 .swiper-button-next:after,
 .swiper-rtl .swiper-button-prev:after {
     content: none !important;
+   
 }

@@ -5,8 +5,8 @@
 }
 
 .information__image {
-    width: 930px;
-    height: 635px;
+    max-width: 930px;
+    max-height: 635px;
 }
 
 .information__content {

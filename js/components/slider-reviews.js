@@ -7,14 +7,15 @@ new Swiper('.swiperReviews', {
  
   spaceBetween: 20,
 
-  // watchOverflow: true,
+  watchOverflow: true,
 
   // slidesPerGroup: 2,
 
+  initialSlide: 2,
 
 
-  slideActiveClass: 'swiper-slide-active',
 
+  
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',

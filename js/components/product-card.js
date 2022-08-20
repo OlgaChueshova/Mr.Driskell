@@ -1,93 +1,129 @@
-// const likeCollection = document.querySelectorAll('.product-card__like--noactive');
-// const card = document.querySelectorAll('.product-card');
+const productCard = document.querySelector('.categories__list');
 
-// const inBasketBtnCollection = document.querySelectorAll('.product-card__inbasket-btn');
+function like(evt) {
+    let target = evt.target.closest('.product-card__like--noactive');
 
-// const basketBtnCollection = document.querySelectorAll('.product-card__basket-btn');
+    const likeCollection = document.querySelectorAll('.product-card__like--noactive');
 
+    for (let i = 0; i < likeCollection.length; i++) {
 
-// function Basket(evt) {
-//     let target = evt.target.closest('.product-card__inbasket-btn, .product-card__basket-btn, .product-card__like--noactive, .button-minus, .button-plus');
-    
-//     switch (target) {
-//         case evt.target.closest('.product-card__like--noactive'):
-//             target.classList.toggle('product-card__like--active');
-//             break;
-//         case evt.target.closest('.product-card__inbasket-btn'):
-//             target.classList.add('product-card__inbasket-btn--noactive');  
+        const activeLike = likeCollection[i];
+    }
 
-//         case evt.target.closest('.product-card__basket-btn'):
+    target.classList.toggle('product-card__like--active');
+}
 
-//             let sumCollection = document.querySelectorAll('#sum');
-
-//             for (let i = 0; i < sumCollection.length; i++) {
-//                 let current = sumCollection[i];
-//                 current = 1;
-
-                
-//                     document.getElementById('sum').innerHTML = current;
-          
-                
-//                     };   
-//                 };
-
-              
-                   
-                   
-//             // const basketBtn = document.querySelector('.product-card__basket-btn');
+productCard.addEventListener('click', like);
 
 
-//             let target2 = evt.target.closest('.button-minus, .button-plus');
+function addInBasket(evt) {
+    let target = evt.target.closest('.product-card__inbasket');
 
-//             // basketBtnCollection.addEventListener('click', basket2);
+    const inBasketCollection = document.querySelectorAll('.product-card__inbasket');
 
-//             function basket2() {
-               
-//                     if (target2) {
-//                         target2 = evt.target.closest('.button-plus')
+    for (let i = 0; i < inBasketCollection.length; i++) {
 
-//                         function addInBasket(current) {
-//                             return current++;
-//                         };
-//                     };
+        const inBasket = inBasketCollection[i];
+    }
 
-//                     if (target2) {
-//                         target2 = evt.target.closest('.button-minus');
-//                         function fromBasket(current) {
-//                             return current--;
-//                         };
-//                     };
-                  
-//                  };
-            
-           
+    target.classList.add('product-card__inbasket--active');
+}
 
-//             };
-    
+productCard.addEventListener('click', addInBasket);
 
-//         // function callback(current, callback) {
-//         //     function callback2(evt) {
-//         //         if (current = 1) {
-//         //             callback();
-//         //         }
-//         //     }
-//         //     document.addEventListener('click', handleEvent);
-//         // };
 
-// card.addEventListener('click', Basket);
+
+const inputCollection = document.querySelectorAll('.product-card__input');
+const btnPlusCollection = document.querySelectorAll('.btn--plus');
+const btnMinusColection = document.querySelectorAll('.btn--minus');
+const formCollection = document.querySelectorAll('.product-card__form');
+
+function selectProducts(evt) {
+    evt.preventDefault()
+    // const input = document.querySelector('.product-card__input');
+    // const value = Number(input.value);
+
+    // let target = evt.target.closest('.product-card__form');
+
+    // const formCollection = document.querySelectorAll('.product-card__form');
+
+    // for (let i = 0; i < formCollection.length; i++) {
+
+    //     const form = formCollection[i];
+
+    // }
+
+    // form.addEventListener('click', function (evt) {
+
+
+    const btnPlus = evt.target.closest('.btn--plus');
+    const btnMinus = evt.target.closest('.btn--minus');
+    const card = document.querySelector('.product-card__form');
+    const input = card.querySelector('.product-card__input');
+    const value = Number(input.value);
+
+
+    if (btnPlus) {
+        input.value = value + 1;
+    }
+    if (btnMinus) {
+        if (value > 1) {
+            input.value = value - 1;
+        }
+    }
 
 
 
 
-// const form =document.querySelector('.product-card');
-// const btnPlus =document.querySelector('.product-card');
-// const btnMinus =document.querySelector('.product-card');
+    // const btnPlusCollection = document.querySelectorAll('.btn--plus');
+    // const btnMinusColection = document.querySelectorAll('.btn--minus');
+
+    // let target = evt.target.closest('.btn--plus, .btn--minus')
 
 
+    // if (evt.target.closest('.btn--plus')) {
+    //     for (let i = 0; i < btnPlusCollection.length; i++) {
+    //         const btnPlus = btnPlusCollection[i];
+    //     }
+    //     btnPlus.addEventListener('click', function (evt) {
+    //         input.value = value + 1;
+    //     })
+    // }
+    // if (evt.target.closest('.btn--minus')) {
+    //     for (let i = 0; i < btnMinusCollection.length; i++) {
+    //         const btnMinus = btnMinusCollection[i];
+    //     }
+    //     btnMinus.addEventListener('click', function (evt) {
+    //         input.value = value - 1;
+    //     })
+    // }
+
+    // for (let i = 0; i < btnPlusCollection.length; i++) {
+    //     const btnPlus = btnPlusCollection[i];
+    // }
 
 
+    // for (let i = 0; i < btnMinusCollection.length; i++) {
+    //     const btnMinus = btnMinusCollection[i];
+    // }
 
+    // if (btnPlus) {
 
+    //     btnPlus.addEventListener('click', function (evt) {
+    //         input.value = value + 1;
+    //     })
+    // }
+
+    // if (btnMinus) {
+
+    //     btnMinus.addEventListener('click', function (evt) {
+    //         input.value = value - 1;
+    //     })
+    // }
+
+}
+
+productCard.addEventListener('click', selectProducts);
 
 
 

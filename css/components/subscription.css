@@ -112,6 +112,8 @@ label {
     bottom: 349px;
     background: var(--bg-Card);
     box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.1);
+    border: none !important;
+    padding: 0 !important;
 }
 
 .subscripcion__button-up--link {

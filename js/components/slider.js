@@ -76,18 +76,18 @@ class Slider {
     createNavigation() {
         const nav = document.createElement('nav');
         const img = document.createElement('img');
-        img.src = './'
+        img.src = '../../images/slider/slider-btn-prev.svg'
         nav.classList.add('slider__navigation'); 
 
         const btnPrev = document.createElement('button');
         btnPrev.append(img)
-        btnPrev.textContent = 'prev';
+        btnPrev.textContent = ' ';
         btnPrev.classList.add('slider-button-prev');
 
         const btnNext = document.createElement('button');
         btnNext.append(img)
         btnNext.classList.add('slider-button-next');
-        btnNext.textContent = 'next';
+        btnNext.textContent = ' ';
 
         btnPrev.addEventListener('click', this.prev);
         btnNext.addEventListener('click', this.next);
@@ -95,23 +95,6 @@ class Slider {
         this.container.parentElement.append(btnPrev, btnNext)
     }
 
-    // createElement() {
-    //     const btnPrev = document.querySelector('.slider-button-prev');
-    //     btnPrev.addEventListener('click', prev());
-    // }
-
-    // createElement() {
-    //     const btnNext = document.createElement('.slider-button-next');
-    //     btnNext.addEventListener('click', next());
-    // }
-
-
 }
 
 new Slider('slider__wrapper').createNavigation();
-
-// const btnPrev = document.querySelector('.slider-button-prev');
-// btnPrev.addEventListener('click', prev);
-
-// const btnNext = document.querySelector('.slider-button-next');
-// btnNext.addEventListener('click', next);
