@@ -207,3 +207,61 @@
     background-repeat: no-repeat;
     border-radius: 0 !important;
 }
+
+@media screen and (max-width:768px) {
+    .reviews {
+        margin-top: 80px;
+    }
+
+    .swiperReviews {
+        width: 598px;
+    }
+
+    .swiper-slide-next .swiper-reviews__slide-wrapper {
+        background-color: var(--Black);
+        width: 430px;
+        height: 221px;
+        position: relative;
+        padding: 36px;
+        padding-bottom: 52px;
+        opacity: 0.5;
+        border-top: 3px solid var(--Orange);
+        border-bottom: 3px solid var(--Orange);
+    }
+
+    .swiper-slide-next .swiper-reviews__slide--foto {
+        position: absolute;
+        width: 58px;
+        height: 58px;
+        top: -36px;
+        left: 36px;
+    }
+
+    .swiper-slide-next .swiper-reviews__slide--text {
+        font-size: 12px;
+        line-height: 17px;
+        color: var(--txt-Gray);
+        margin-bottom: 42px;
+    }
+
+    .swiper-slide-next .swiper-reviews__slide--instagram {
+        width: 20px;
+        height: 20px;
+        margin-right: 11px;
+    }
+
+    .swiper-slide-next .swiper-reviews__slide--email {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .swiper-reviews__btn-prev,
+    .swiper-reviews__btn-next {
+        display: none;
+    }
+    .reviews__title {
+        font-size: 50px;
+        text-align:left;
+        margin-bottom: 147px;
+    }
+}

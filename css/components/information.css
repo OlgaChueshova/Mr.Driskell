@@ -2,6 +2,7 @@
     display: flex;
     justify-content: start;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .information__image {
@@ -50,4 +51,17 @@
     background-image: url('../../images/buttons/btn-darck-active.svg');
     transition: .3s;
     color: var(--txt-White);
+}
+
+@media screen and (max-width:768px) {
+    .information__content {
+        width: 100vw;
+        margin-top: 40px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .information__content--btn {
+        margin-left: 35%;
+    }
 }

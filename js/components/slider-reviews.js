@@ -13,7 +13,13 @@ new Swiper('.swiperReviews', {
 
   initialSlide: 2,
 
+  breakpoints: {
+   
+    768: {
+      slidesPerView: 1,
+    },
 
+  },
 
   
   // If we need pagination

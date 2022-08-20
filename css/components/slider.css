@@ -71,3 +71,34 @@
     border: none !important;
     padding: 0;
 }
+
+
+@media screen and (max-width:768px) {
+    .slider__slide {
+        background-image: url('../../images/slider/Bg\ 768.jpg');
+        min-width: 100%;
+        min-height: 536px;
+    }
+
+    .slide-pagination {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 111px;
+        left: 314px;
+        bottom: 74px;
+    }
+
+    .slider-button-next,
+    .slider-button-prev {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:320px) {
+       .slider__slide {
+        background-image: url('../../images/slider/Bg\ 320.jpg');
+        min-width: 100%;
+        min-height: 321px;
+    }
+}

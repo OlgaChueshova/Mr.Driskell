@@ -15,6 +15,7 @@
 @import url('./components/reviews.css');
 @import url('./components/subscription.css');
 @import url('./components/footer.css');
+@import url('./components/header-mobile.css');
 
 * {
     box-sizing: border-box;

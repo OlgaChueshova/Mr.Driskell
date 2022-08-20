@@ -33,8 +33,8 @@
     position: absolute;
     left: 0;
     top: 0;
- }
- 
+}
+
 .header__slide-details-btn--link {
     font-family: 'Jost';
     font-weight: 400;
@@ -46,4 +46,23 @@
     margin: 18px 63px 62px 64px;
     z-index: 2;
     position: absolute;
+}
+
+@media screen and (max-width:768px) {
+    .header__slide-titel-group {
+        margin-left: 20px;
+    }
+
+    .header__slide-titel {
+        font-size: 60px;
+        margin-top: 30px;
+    }
+    .header__slide-sub-titel {
+        font-size: 25px;
+        margin-top: 40px;
+    }
+    .header__slide-details-btn {
+        margin-top: 40px;
+    }
+    
 }
