@@ -208,11 +208,11 @@
     color: var(--txt-White);
 }
 
-.product-card__inbasket--active> .product-card__inbasket-btn {
+.product-card__inbasket--active>.product-card__inbasket-btn {
     display: none;
 }
 
-.product-card__inbasket--active> .product-card__basket-btn {
+.product-card__inbasket--active>.product-card__basket-btn {
     display: block;
 }
 
@@ -242,7 +242,7 @@
     width: 50px;
     height: 50px;
     border: none !important;
-    padding: 0!important;
+    padding: 0 !important;
     background-image: url('../../images/buttons/square.svg');
     background-size: contain;
     background-repeat: no-repeat;

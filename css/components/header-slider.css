@@ -1,0 +1,217 @@
+.header-slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    min-height: 700px;
+    background-color: var(--Black);
+}
+
+.header-slider__slide {
+    background-image: url('../../images/slider/bg.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-width: 100%;
+    min-height: 700px;
+    background-color: var(--Black);
+
+}
+
+.header-slider__pagination {
+    display: flex;
+    flex-direction: column;
+    position: absolute !important;
+    width: 16px !important;
+    left: 75% !important;
+    bottom: 344px !important;
+    padding-left: 3px !important;
+}
+
+.header-slider__pagination>.swiper-pagination-bullet {
+    width: 16px !important;
+    height: 16px !important;
+    border: 1px solid var(--Dark-Orange);
+    border-radius: 0;
+    background-color: transparent;
+    margin: 9px !important;
+    opacity: 1 !important;
+}
+
+.header-slider .swiper-pagination-bullet-active {
+    width: 16px;
+    height: 16px;
+    border: 1px solid var(--Dark-Orange);
+    background-image: url('../../images/slider/active-pag.svg');
+    background-repeat: no-repeat;
+    background-position: 2px 2px;
+}
+
+.header-slider__btn-prev {
+    display: block;
+    width: 40px !important;
+    height: 60px !important;
+    position: absolute;
+    top: 19% !important;
+    left: 75% !important;
+    background-image: url('../../images/slider/slider-btn-prev.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: transparent;
+    border: none !important;
+    padding: 0;
+}
+
+.header-slider__btn-next {
+    display: block;
+    width: 40px !important;
+    height: 88px !important;
+    position: absolute;
+    top: 57% !important;
+    left: 75% !important;
+    background-image: url('../../images/slider/slider-btn-next.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: transparent;
+    border: none !important;
+    padding: 0;
+}
+
+.header__slide-titel-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-left: 352px;
+}
+
+.header__slide-titel {
+    font-family: 'Forum';
+    font-weight: 400;
+    font-size: 75px;
+    line-height: 100%;
+    color: var(--txt-Orange);
+    margin-top: 110px;
+}
+
+.header__slide-sub-titel {
+    font-family: 'Jost';
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 140%;
+    color: var(--txt-White);
+    margin-top: 30px;
+}
+
+.header__slide-details-btn {
+    display: block;
+    position: relative;
+    margin-top: 60px;
+}
+
+.header__slide-details-btn--button {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.header__slide-details-btn--link {
+    font-family: 'Jost';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--txt-White);
+    text-decoration: none;
+    margin: 18px 63px 62px 64px;
+    z-index: 2;
+    position: absolute;
+}
+
+
+
+
+@media screen and (max-width:1680px) {
+    
+}
+@media screen and (max-width:1536px) {
+    
+}
+
+@media screen and (max-width:1280px) {
+
+}
+@media screen and (max-width:960px) {
+
+}
+
+
+@media screen and (max-width:768px) {
+    .header-slider__slide {
+        background-image: url('../../images/slider/Bg\ 768.jpg');
+        height: 536px;
+    }
+
+    .header-slider__pagination {
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        min-width: 111px !important;
+        left: 314px !important;
+        bottom: 72px !important;
+        margin: 0 !important;
+    }
+
+    .header-slider__btn-prev,
+    .header-slider__btn-next {
+        display: none !important;
+    }
+
+    .header__slide-titel-group {
+        margin-left: 20px;
+    }
+
+    .header__slide-titel {
+        font-size: 60px;
+        margin-top: 30px;
+    }
+
+    .header__slide-sub-titel {
+        font-size: 25px;
+        margin-top: 40px;
+    }
+
+    .header__slide-details-btn {
+        margin-top: 40px;
+    }
+
+}
+
+@media screen and (max-width:320px) {
+    .header-slider__slide {
+        background-image: url('../../images/slider/Bg\ 320.jpg');
+        width: 100%;
+        min-height: 635px;
+    }
+
+    .header__slide-titel-group {
+        margin-left: 20px;
+    }
+
+    .header__slide-titel {
+        font-size: 35px;
+        margin-top: 321px;
+    }
+
+    .header__slide-sub-titel {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    .header__slide-details-btn {
+        margin-top: 40px;
+    }
+
+    .header-slider__pagination {
+        display: none !important;
+    }
+
+}
