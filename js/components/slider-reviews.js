@@ -3,6 +3,7 @@ new Swiper('.swiperReviews', {
   direction: 'horizontal',
   loop: false,
 
+
   slidesPerView: 2,
  
   spaceBetween: 20,
@@ -13,18 +14,19 @@ new Swiper('.swiperReviews', {
 
   initialSlide: 2,
 
-  breakpoints: {
+  // breakpoints: {
    
-    768: {
-      slidesPerView: 1,
-    },
+  //   768: {
+  //     slidesPerView: 1,
+  //   },
 
-  },
+  // },
 
   
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',
+    clickable: true,
   },
 
   // Navigation arrows

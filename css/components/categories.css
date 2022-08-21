@@ -88,3 +88,17 @@
     line-height: 150%;
     color: var(--txt-Orange);
 }
+
+@media screen and (max-width:768px) {
+    .categories-wrapper {
+        max-width: 100vw;
+        min-height: 987px;
+        margin: 80px 20px 0 20px;
+    }
+
+    .categories__list--link {
+        font-size: 20px;
+    }
+
+
+}

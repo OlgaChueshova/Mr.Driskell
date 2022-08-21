@@ -24,6 +24,7 @@
 body {
     font-family: 'Jost', sans-serif;
     font-weight: 400;
+    background: var(--bg-Grey);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -33,7 +34,7 @@ h1, h2, h3, h4, h5, h6 {
 
 main {
     background: var(--bg-Grey);
-    padding-top: 120px;
+    
 }
 
 a:hover {

@@ -227,6 +227,7 @@
         opacity: 0.5;
         border-top: 3px solid var(--Orange);
         border-bottom: 3px solid var(--Orange);
+
     }
 
     .swiper-slide-next .swiper-reviews__slide--foto {

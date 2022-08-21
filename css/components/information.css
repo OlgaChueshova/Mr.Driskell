@@ -2,7 +2,6 @@
     display: flex;
     justify-content: start;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 .information__image {
@@ -53,7 +52,7 @@
     color: var(--txt-White);
 }
 
-@media screen and (max-width:768px) {
+/* @media screen and (max-width: 768px) {
     .information__content {
         width: 100vw;
         margin-top: 40px;
@@ -64,4 +63,4 @@
     .information__content--btn {
         margin-left: 35%;
     }
-}
+} */
