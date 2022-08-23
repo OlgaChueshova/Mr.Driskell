@@ -43,3 +43,7 @@ a:hover {
     cursor: pointer;
     color: var(--txt-Orange);
 }
+
+a {
+    text-decoration: none;
+}

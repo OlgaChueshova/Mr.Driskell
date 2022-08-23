@@ -524,3 +524,10 @@
         width: 616px;
     }
 }
+
+@media screen and (max-width:768px){
+    .header__container {
+        display: none;
+    }
+   
+}
