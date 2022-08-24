@@ -13,16 +13,19 @@ const catalog = document.querySelector('.header__mobile-menu--dropdown-link');
 const catalogList = document.querySelector('.header__mobile-sub-menu');
 
 function showSubMenu() {
-    catalogList.classList.toggle('header__mobile-sub-menu-active');
+    catalogList.classList.toggle('header__mobile-sub-menu--active');
 }
 
 catalog.addEventListener('click', showSubMenu);
 
 
-function remove() {
-    if (catalogList.classList('.header__mobile-sub-menu-active')) {
-        catalogList.classList.remove('header__mobile-sub-menu-active');
+function removeActivClass (target) {
+    if (target.classList.contains('header__mobile-sub-menu--active')) {
+        target.classList.remove('header__mobile-sub-menu--active');
     }
+    
+    
+
 }
 
-dropdown.addEventListener('click', remove);
+dropdown.addEventListener('click', removeActivClass);

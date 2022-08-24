@@ -511,6 +511,20 @@
         padding-left: 50px;
         padding-right: 50px;
     }
+    .header__logo {
+      display: none;
+    }
+
+    .header__navigation-link {
+        font-size: 13px;
+    }
+    .header__search {
+        width: 300px;
+        min-width: 200px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
 }
 
 @media screen and (max-width:768px) {

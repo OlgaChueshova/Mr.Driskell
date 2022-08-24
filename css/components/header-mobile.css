@@ -1,7 +1,7 @@
-.header-mobile {
+.header__mobile {
     display: none;
-    width: 100vh;
-    min-height: 536px;
+    min-width: 100vh;
+    min-height: 80px;
 }
 
 .header__mobile-menu--dropdown {
@@ -16,8 +16,10 @@
     background-color: var(--Black);
     top: 80px;
     left: 0px;
-    width: 320px;
+    max-width: 320px;
     padding: 25px 20px 40px 20px;
+    font-size: 25px;
+    line-height: 140%;
 }
 
 .header__mobile-menu--active .header__mobile-menu--list {
@@ -43,7 +45,7 @@
     background-repeat: no-repeat;
 }
 
-.header__mobile-sub-menu-active {
+.header__mobile-sub-menu--active {
     display: block;
 }
 
@@ -55,12 +57,13 @@
 }
 
 .header__mobile-list--close {
+    display: inline-block;
     display: none;
     background-color: transparent;
     border: none;
     width: 24px;
     height: 14px;
-    margin: 0 0 0 5px;
+    transform: translateY(8px);
 }
 
 .header__mobile-list--link {
@@ -125,16 +128,17 @@
     background-size: contain;
     background-position: center top;
     background-repeat: no-repeat;
-    padding-top: 25px;
-    padding-bottom: 40px;
+
 }
 
-.header__mobile-menu--list-bg {
+/* .header__mobile-menu--list-bg {
     background-image: url('../../images/dividers/mobile-sub-menu-bottom.svg');
     background-size: contain;
-    background-position: center bottom;
+    background-position: bottom center;
     background-repeat: no-repeat;
-}
+    padding-top: 25px;
+    padding-bottom: 40px;
+} */
 
 .header__mobile-panel--basket>p {
     font-family: 'Jost';
@@ -149,18 +153,44 @@
     margin-left: 3px;
 }
 
+.header__mobile-menu--item-320 {
+    display: none;
+}
+
 
 
 @media screen and (max-width:768px) {
-    .header-mobile {
+    .header__mobile {
         display: block;
+    }
+
+    .header__mobile-search {
+        min-width: 274px;
+
     }
 
 }
 
 @media screen and (max-width:320px) {
-    .header-mobile__navigation {
+    .header__mobile-navigation {
         padding: 20px 22px 28px 23px;
     }
+
+    
+.header__mobile-menu--item-320 {
+    display: block;
+}
+
+.header__mobile-search {
+   display: none;
+}
+
+.header__panel-flex-container--heart {
+   display: none;
+}
+
+.header__panel-flex-container--person {
+    display: none;
+}
 
 }

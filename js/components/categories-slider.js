@@ -1,31 +1,35 @@
-new Swiper('.slider-categories-mobile', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: false,
-    autoHeight: false,
+// new Swiper('.sliderCategoriesMobile', {
+//     // Optional parameters
+//     direction: 'horizontal',
+//     loop: false,
+//     autoHeight: false,
+    
+//     slidesPerView: 4,
 
-    slidesPerView: 8,
+//     spaceBetween: 20,
+ 
+//     grid: {
+//         rows:2,
 
-    spaceBetween: 20,
+//     },
 
-    slidesPerColumn: 2,
+   
+//     // If we need pagination
+//     pagination: {
+//         el: '.slider-categories__paginations',
 
+//         clickable: true,
+//     },
 
-    // If we need pagination
-    pagination: {
-        el: '.swiper-pagination',
+//     // Navigation arrows
+//     navigation: {
+//         nextEl: '.slider-categories__btn-next',
+//         prevEl: '.slider-categories__btn-prev',
+//     },
 
-        clickable: true,
-    },
+//     // And if we need scrollbar
+//     scrollbar: {
+//         el: '.swiper-scrollbar',
+//     },
+// });
 
-    // Navigation arrows
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-
-    // And if we need scrollbar
-    scrollbar: {
-        el: '.swiper-scrollbar',
-    },
-});

@@ -47,7 +47,7 @@ function selectProducts(evt) {
             if (value === 1) {
                     
                 target.querySelector('btn--minus')
-                
+            
                 
             }  
                 

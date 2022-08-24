@@ -1,8 +1,8 @@
 .header-slider {
     position: relative;
     overflow: hidden;
-    width: 100%;
-    min-height: 700px;
+    width: 100vw;
+    min-height: 768px;
     background-color: var(--Black);
 }
 
@@ -129,14 +129,51 @@
 
 
 
+@media screen and (max-width:1280px) {
 
-@media screen and (max-width:1680px) {}
+    .header-slider {
+            min-height: 600px;
+    }
+    
+    .header-slider__btn-prev,
+    .header-slider__btn-next {
+        display: none !important;
+    }
 
-@media screen and (max-width:1536px) {}
+    
+    .header-slider__pagination {
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        min-width: 180px !important;
+        left: 45% !important;
+        top: 80% !important;
+        margin: 0 !important;
+        opacity: 1 !important;
+    }
 
-@media screen and (max-width:1280px) {}
+    .header__slide-titel-group {
+        margin-left: 170px;
+    }
 
-@media screen and (max-width:960px) {}
+    .header__slide-titel {
+        font-size: 60px;
+        margin-top: 48px;
+    }
+
+    .header__slide-sub-titel {
+        font-size: 25px;
+        margin-top: 30px;
+    }
+
+    .header__slide-details-btn {
+        margin-top: 40px;
+    }
+
+}
+
+@media screen and (max-width:960px) {
+
+}
 
 
 @media screen and (max-width:768px) {
@@ -150,25 +187,18 @@
    
     }
 
+    
     .header-slider__pagination {
-        flex-direction: row !important;
-        justify-content: space-between !important;
         min-width: 140px !important;
         left: 40% !important;
         top: 80% !important;
-        margin: 0 !important;
-        opacity: 1 !important;
+      
     }
+
 
     .header-slider__pagination>.swiper-pagination-bullet {
         margin: 7px !important;
        
-    }
-    
-
-    .header-slider__btn-prev,
-    .header-slider__btn-next {
-        display: none !important;
     }
 
     .header__slide-titel-group {
@@ -214,10 +244,17 @@
 
     .header__slide-details-btn {
         margin-top: 40px;
+        margin-bottom: 20px;
+
     }
 
     .header-slider__pagination {
         display: none !important;
+    }
+
+    .header__slide-details-btn--link {
+        font-size: 15px;
+        margin: 20px 81px 20px 81px;
     }
 
 }
